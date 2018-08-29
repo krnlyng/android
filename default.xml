@@ -11,18 +11,14 @@
 
   <project name="device-sony-nile" path="device/sony/nile" remote="hybris-patches" revision="hybris-sony-aosp-8.1.0_r35_20180714" />
   <project name="android_kernel_sony_msm" path="kernel/sony/msm-4.4/kernel" remote="hybris-patches" revision="hybris-sony-aosp-8.1.0_r35_20180714"/>
-  <project name="droid-hal-sony-nile" path="rpm" remote="hybris" revision="master"/>
-  <project name="hybris-boot" path="hybris/hybris-boot" remote="hybris" revision="master"/>
-  <project name="mer-kernel-check" path="hybris/mer-kernel-check" remote="hybris" revision="master"/>
-  <project name="libhybris-1" path="external/libhybris" remote="krnlyng" revision="android8-initial"/>
-  <project name="android_external_busybox_prebuilt" path="external/busybox" remote="hybris" revision="master"/>
-  <project name="android_external_selinux_stubs" path="external/selinux_stubs" remote="hybris" revision="master"/>
-  <project name="android_frameworks_av" path="frameworks/av" remote="hybris-patches" revision="hybris-sony-aosp-8.1.0_r35_20180714"/>
-  <project name="android_frameworks_native" path="frameworks/native" remote="hybris-patches" revision="hybris-sony-aosp-8.1.0_r35_20180714"/>
-  <project name="android_hardware_libhardware" path="hardware/libhardware" remote="hybris-patches" revision="hybris-sony-aosp-8.1.0_r35_20180714"/>
-  <project name="android_system_core" path="system/core" remote="hybris-patches" revision="hybris-sony-aosp-8.1.0_r35_20180714"/>
-  <project name="android_bionic" path="bionic" remote="hybris-patches" revision="hybris-sony-aosp-8.1.0_r35_20180714"/>
-  <project name="android_build" path="build/make" remote="hybris-patches" revision="hybris-sony-aosp-8.1.0_r35_20180714">
+  <project name="droid-src-sony-nile" path="rpm" remote="hybris" revision="master"/>
+
+  <project name="platform/frameworks/av" path="frameworks/av" revision="refs/tags/android-8.1.0_r35"/>
+  <project name="platform/frameworks/native" remote="aosp" path="frameworks/native" revision="refs/tags/android-8.1.0_r35"/>
+  <project name="platform/hardware/libhardware" path="hardware/libhardware" revision="refs/tags/android-8.1.0_r35"/>
+  <project name="platform/system/core" path="system/core" revision="refs/tags/android-8.1.0_r35"/>
+  <project name="platform/bionic" path="bionic" revision="refs/tags/android-8.1.0_r35"/>
+  <project name="platform/build" path="build/make" revision="refs/tags/android-8.1.0_r35">
     <copyfile dest="Makefile" src="core/root.mk"/>
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
     <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
