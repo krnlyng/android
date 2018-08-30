@@ -11,7 +11,7 @@
 
   <project name="device-sony-nile" path="device/sony/nile" remote="hybris-patches" revision="hybris-sony-aosp-8.1.0_r35_20180714" />
   <project name="android_kernel_sony_msm" path="kernel/sony/msm-4.4/kernel" remote="hybris-patches" revision="hybris-sony-aosp-8.1.0_r35_20180714"/>
-  <project name="droid-src-sony-nile" path="rpm" remote="hybris" revision="master"/>
+  <project name="droid-src-sony-nile" path="rpm" remote="hybris" revision="jb42316"/>
 
   <project name="platform/frameworks/av" path="frameworks/av" revision="refs/tags/android-8.1.0_r35"/>
   <project name="platform/frameworks/native" remote="aosp" path="frameworks/native" revision="refs/tags/android-8.1.0_r35"/>
