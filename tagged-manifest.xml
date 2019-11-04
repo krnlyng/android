@@ -5,6 +5,7 @@
   <remote fetch="https://github.com/mer-hybris/" name="hybris"/>
   <remote fetch="https://github.com/mer-hybris/" name="hybris-patches" revision="hybris-sony-aosp-8.1.0_r52_20190206"/>
   <remote fetch="https://github.com/sonyxperiadev/" name="sony"/>
+  <remote fetch="https://github.com/krnlyng/" name="krnlyng"/>
   <remote fetch="https://github.com/mer-hybris/" name="sony-patches" revision="droid-src-sony-aosp-8.1.0_r52_20190206"/>
   
   <default remote="aosp" revision="refs/tags/android-8.1.0_r52" sync-j="4"/>
@@ -70,7 +71,7 @@
   <project clone-depth="1" name="device/google/vrservices" revision="b290ba549b38447937773e3698e4678015550684" upstream="refs/tags/android-8.1.0_r52"/>
   <project name="device/google/wahoo" revision="25e22473e5c306732b4cf142f31b89381f4cfb44" upstream="refs/tags/android-8.1.0_r52"/>
   <project name="device/sample" revision="509608c76570d623c05952c8eecdc2868ca8a952" upstream="refs/tags/android-8.1.0_r52"/>
-  <project name="droid-hal-sony-nile" path="rpm" remote="hybris" revision="1d266024dde81c32caeccbab6978426038be326c" upstream="master"/>
+  <project name="droid-hal-sony-nile" path="rpm" revision="373bb87d3382308585eebd14372af24c30feba6f" upstream="test_dhd_update" remote="krnlyng"/>
   <project name="hardware-qcom-display" path="hardware/qcom/display/msmfb" remote="sony" revision="f306f78eeb7884e1266078266e170170c23fc1c0" upstream="aosp/LA.UM.6.3.r1"/>
   <project name="hardware-qcom-display" path="hardware/qcom/display/sde" remote="sony" revision="9c859d4816c6cfba691beb03b675fc3eb095b2ba" upstream="aosp/LA.UM.7.3.r1"/>
   <project name="hardware-qcom-wlan" path="vendor/qcom/opensource/wlan" remote="sony" revision="6351125ec900f421276213a2a0d336cfc6268042" upstream="master"/>
